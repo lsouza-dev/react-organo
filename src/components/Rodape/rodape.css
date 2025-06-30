@@ -18,9 +18,26 @@ footer div {
 .redes_sociais ul {
     list-style: none;
     display: flex;
-    gap: 32px;
+    padding: 0pxC;
+}
+
+.redes_sociais li {
+    margin: 0 12px;
 }
 
 .logo img{
     width: 150px;
+}
+
+@media (max-width: 764px){
+    footer {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(3,1fr);
+        padding-top: 18px;
+    }   
+
+    .redes_sociais{
+        grid-row: 2;
+    }
 }
